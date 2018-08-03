@@ -1,0 +1,50 @@
+body{
+	background-color: #efefef;
+	font-size: 150%;
+}
+
+a {
+	color:blue;
+}
+
+.main-class{
+	width:500px;
+	margin:auto;	
+	background-color: white;
+	border:1px solid #ddd;
+	padding: 10px;
+}
+
+.header{
+	padding: 15px;
+	font-size: 110%;
+	background-color:teal;
+	color: purple;
+}
+
+img{
+	width: 40%;
+}
+
+.slider{
+	width: 500px;
+	overflow: hidden;
+}
+
+.slider ul{
+	list-style: none;
+	width: 1500px;
+	position:relative; 
+  	left: -100px;
+  	padding: 0; 
+  	margin: 0;
+}
+
+.slider ul li {
+	float: left;
+	
+
+}
+
+	
+}
