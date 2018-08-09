@@ -1,8 +1,9 @@
 $(document).ready(function($) {
 	
-	var imageBox = $('.slider ul');
-	var imageWidth = $('.slider ul li').first().children('img').width();
-	var imageQuantity = $('.slider ul').children('li').length;
+	var imageBox = $('.slider ul'),
+		imageWidth = $('.slider ul li').first().children('img').width(),
+	    imageQuantity = $('.slider ul').children('li').length,
+	    currentImage = 1;
 
 	imageBox.css('width', imageWidth*imageQuantity);
 	console.log(imageWidth);	
@@ -10,18 +11,20 @@ $(document).ready(function($) {
 	$('.nav button').on('click', function() {
 		var whichButton = $(this).data('nav');
 
-		console.log('working');
-
 		if(whichButton === 'next'){
-			console.log('next')
+			currentImage++;
+			var pxValue = -(currentImage-1) * imageWidth
+
 			imageBox.animate({
-				'left' : '-500px'
+				'left' : pxValue
 			})
 
 		}else if (whichButton === 'prev'){
-			console.log('prev')
-			imageBox.animate({
-				'left' : '+500px'
+			currentImage--;
+			var pxValue = -(currentImage-1) * imageWidth
+
+			imageBox.animate({  
+				'left' : pxValue
 			})
 		}
 	});
