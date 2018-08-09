@@ -1,50 +1,45 @@
-body{
+body {
 	background-color: #efefef;
 	font-size: 150%;
 }
 
 a {
-	color:blue;
+	color: blue;
 }
 
-.main-class{
-	width:500px;
-	margin:auto;	
+.main-class {
+	width: 500px;
+	margin: auto;
 	background-color: white;
-	border:1px solid #ddd;
+	border: 1px solid #ddd;
 	padding: 10px;
 }
 
-.header{
+.header {
 	padding: 15px;
 	font-size: 110%;
-	background-color:teal;
+	background-color: teal;
 	color: purple;
 }
 
-img{
-	width: 40%;
+img {
+	width: 500px;
 }
 
-.slider{
-	width: 500px;
+.slider {
+	width: 1500px;
 	overflow: hidden;
 }
 
-.slider ul{
+.slider ul {
 	list-style: none;
 	width: 1500px;
-	position:relative; 
-  	left: -100px;
-  	padding: 0; 
-  	margin: 0;
+	position: relative;
+	left: -1000px;
+	padding: 0;
+	margin: 0;
 }
 
 .slider ul li {
 	float: left;
-	
-
-}
-
-	
 }
